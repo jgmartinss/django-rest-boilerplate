@@ -4,7 +4,7 @@
 
 ### Organization
 
-  * yourapplication
+  . yourapplication
   ├── config
   ├───├── environment.py
   ├───├── settings_base.py
