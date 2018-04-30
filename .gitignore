@@ -1,0 +1,8 @@
+*.sqlite3
+.DS_Store
+.idea
+__pycache__
+*__pycache__*
+*.pyc
+**/migrations/*
+!**/migrations/__init__.py
