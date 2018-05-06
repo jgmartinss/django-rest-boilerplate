@@ -3,7 +3,7 @@
 > Boilerplate using Django 2 and Django REST Framework.
 
 
-## Project Structure
+### Project Structure
 
   . yourprojectname
   ├── config
@@ -14,10 +14,10 @@
   |  ├── wsgi.py
   │  └── __init__.py                
   ├── v1                    
-  ├─────├─ apps
-  ├───────├─ accounts
-  ├─────── __init__.py
-  ├───── __init__.py
+  ├────── apps
+  ├──────── accounts
+  ├──────── __init__.py
+  ├────── __init__.py
   ├── __init__.py
   ├── gitignore.py
   ├── README.md
