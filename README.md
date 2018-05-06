@@ -6,13 +6,7 @@
 ### Project Structure
 
   . yourprojectname
-  ├── config
-  │  ├── environment.py 
-  |  ├── settings_base.py
-  |  ├── settings_local.py          
-  |  ├── urls.py
-  |  ├── wsgi.py
-  │  └── __init__.py                
+  ├── config                
   ├── v1                    
   ├────── apps
   ├──────── accounts
