@@ -3,10 +3,19 @@
 > Boilerplate using Django 2 and Django REST Framework.
 
 
-### Project Structure
+## Project Structure
 
+--------
+
+  ```sh
   . yourprojectname
-  ├── config                
+  ├── config
+  │  ├── environment.py 
+  |  ├── settings_base.py
+  |  ├── settings_local.py          
+  |  ├── urls.py
+  |  ├── wsgi.py
+  │  └── __init__.py                
   ├── v1                    
   ├────── apps
   ├──────── accounts
@@ -17,6 +26,7 @@
   ├── README.md
   ├── manage.py
   └── requirements.txt
+  ```
 
 ## Let's use!
 
