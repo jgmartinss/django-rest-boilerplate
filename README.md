@@ -10,7 +10,7 @@
   ```sh
   . yourprojectname
   ├── config
-  │  ├── environment.py 
+  │  ├── environment.py
   |  ├── settings_base.py
   |  ├── settings_local.py          
   |  ├── urls.py
@@ -45,14 +45,13 @@ Install required packages:
 ```sh
 $ cd yourprojectname
 
-$ pip3 install -r requirements.txt
+$ make install
 ```
 
 Initialize project:
 ```sh
-$ python3 manage.py makemigrations
-$ python3 manage.py migrate
-$ python3 manage.py createsuperuser
-$ python3 manage.py runserver
+$ make makemigrations
+$ make migrate
+$ make user
+$ make run
 ```
-
