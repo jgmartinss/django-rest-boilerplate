@@ -10,12 +10,15 @@
   ```sh
   . yourprojectname
   ├── config
-  │  ├── environment.py
-  |  ├── settings_base.py
-  |  ├── settings_local.py          
+  |  ├── environment.py      
   |  ├── urls.py
   |  ├── wsgi.py
   │  └── __init__.py                
+  ├───── settings
+  │     ├── base.py
+  |     ├── development.py
+  |     ├── production.py   
+  │     └── __init__.py   
   ├── v1                    
   ├────── apps
   ├──────── accounts
@@ -23,9 +26,9 @@
   ├────── __init__.py
   ├── __init__.py
   ├── gitignore.py
-  ├── makefile
-  ├── README.md
+  ├── Makefile
   ├── manage.py
+  ├── README.md
   └── requirements.txt
   ```
 
@@ -51,8 +54,8 @@ $ make install
 
 Initialize project:
 ```sh
-$ make makemigrations
+$ make migrations
 $ make migrate
-$ make user
+$ make createuser
 $ make run
 ```
