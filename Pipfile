@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "==2.0"
+djangorestframework = "*"
+markdown = "*"
+django-filter = "*"
+
+[dev-packages]
+django-debug-toolbar = "*"
+tox = "*"
+
+[requires]
+python_version = "3.6"

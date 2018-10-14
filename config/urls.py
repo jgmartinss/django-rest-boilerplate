@@ -6,7 +6,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
-from v1.apps.accounts.routes import router
+from v1.apps.routes import router
 
 
 urlpatterns = [

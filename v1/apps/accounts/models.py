@@ -32,10 +32,10 @@ class User(AbstractBaseUser,  PermissionsMixin):
         db_tablespace = 'tb_accounts_user'
 
     def get_full_name(self):
-        return '{} {}'.format(self.first_name, self.last_name)
+        return f'{self.first_name} {self.last_name}'
 
     def get_short_name(self):
-        return self.first_name
+        return f'{self.first_name}'
 
     def has_perm(self, perm, obj=None):
         "Does the user have a specific permission?"
@@ -47,7 +47,7 @@ class User(AbstractBaseUser,  PermissionsMixin):
 
     @property
     def get_nickname(self):
-        return self.username
+        return f'{self.username}'
 
     @property
     def is_staff(self):
@@ -55,7 +55,7 @@ class User(AbstractBaseUser,  PermissionsMixin):
         return self.is_admin
 
     def __str__(self):
-        return self.email
+        return f'{self.email}'
 
     def save(self, *args, **kwargs):
         if not self.password:

@@ -23,12 +23,17 @@
   ├────── apps
   ├──────── accounts
   ├──────── __init__.py
+  ├──────── routes.py
   ├────── __init__.py
   ├── __init__.py
   ├── gitignore.py
   ├── Makefile
   ├── manage.py
   ├── README.md
+  ├── Pipfile
+  ├── Pipfile.lock
+  ├── setup
+  ├── tox.ini
   └── requirements.txt
   ```
 

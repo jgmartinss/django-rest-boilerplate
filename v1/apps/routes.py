@@ -1,6 +1,6 @@
 from rest_framework import routers
 
-from . import views
+from v1.apps.accounts import views
 
 
 router = routers.DefaultRouter()
