@@ -1,5 +1,3 @@
-import uuid
-
 from django.db import models
 
 from django.utils.translation import gettext_lazy as _
@@ -29,7 +27,7 @@ class User(AbstractBaseUser,  PermissionsMixin):
         app_label = 'accounts'
         verbose_name = _('User')
         verbose_name_plural = _('Users')
-        db_tablespace = 'tb_accounts_user'
+        db_table = 'tb_accounts_user'
 
     def get_full_name(self):
         return f'{self.first_name} {self.last_name}'
@@ -56,8 +54,3 @@ class User(AbstractBaseUser,  PermissionsMixin):
 
     def __str__(self):
         return f'{self.email}'
-
-    def save(self, *args, **kwargs):
-        if not self.password:
-            self.password = str(uuid.uuid4()).replace('-', '')
-        super(User, self).save(*args, **kwargs)

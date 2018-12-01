@@ -4,6 +4,7 @@ import sys
 
 from config.environment import SETTINGS_MODULE
 
+
 if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", SETTINGS_MODULE)
     try:

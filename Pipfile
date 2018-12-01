@@ -4,14 +4,16 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "==2.0"
 djangorestframework = "*"
 markdown = "*"
 django-filter = "*"
+django = "*"
 
 [dev-packages]
 django-debug-toolbar = "*"
 tox = "*"
+python-decouple = "*"
+dj-database-url = "*"
 
 [requires]
 python_version = "3.6"

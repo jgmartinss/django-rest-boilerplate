@@ -10,31 +10,42 @@
   ```sh
   . yourprojectname
   ├── config
-  |  ├── environment.py      
-  |  ├── urls.py
-  |  ├── wsgi.py
-  │  └── __init__.py                
-  ├───── settings
-  │     ├── base.py
-  |     ├── development.py
-  |     ├── production.py   
-  │     └── __init__.py   
-  ├── v1                    
-  ├────── apps
-  ├──────── accounts
-  ├──────── __init__.py
-  ├──────── routes.py
-  ├────── __init__.py
-  ├── __init__.py
-  ├── gitignore.py
+  │   ├── __init__.py
+  │   ├── environment.py
+  │   ├── routes.py
+  │   ├── settings
+  │   │   ├── __init__.py
+  │   │   ├── base.py
+  │   │   ├── development.py
+  │   │   └── production.py
+  │   ├── urls.py
+  │   └── wsgi.py
+  ├── contrib
+  │   └── env_gen.py
+  └── v1
+  ├── apps
+  │   ├── accounts
+  │   │   ├── __init__.py
+  │   │   ├── migrations
+  │   │   │   └── __init__.py
+  │   │   ├── admin.py
+  │   │   ├── apps.py
+  │   │   ├── managers.py
+  │   │   ├── models.py
+  │   │   ├── serializer.py
+  │   │   ├── signals.py
+  │   │   └── views.py
+  │   └── __init__.py
+  └── __init__.py
   ├── Makefile
   ├── manage.py
-  ├── README.md
   ├── Pipfile
   ├── Pipfile.lock
-  ├── setup
+  ├── README.md
+  ├── requirements.txt
+  ├── setup.py
+  ├── static
   ├── tox.ini
-  └── requirements.txt
   ```
 
 ## Let's use!
@@ -59,8 +70,5 @@ $ make install
 
 Initialize project:
 ```sh
-$ make migrations
-$ make migrate
-$ make createuser
-$ make run
+$ make setup
 ```
