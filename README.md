@@ -44,7 +44,6 @@
   ├── README.md
   ├── requirements.txt
   ├── setup.py
-  ├── static
   ├── tox.ini
   ```
 
